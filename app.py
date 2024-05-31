@@ -11,11 +11,12 @@ import altair as alt
 
 
 # In[ ]:
-
+def load_data(file_path):
+    return pd.read_excel(file_path)
 
 # Page title
 st.set_page_config(page_title='Exploratory Investment Viewer', page_icon='📊')
-st.title('📊 Exploratory Investment Viewewr')
+st.title('📊 Exploratory Investment Viewer')
 
 with st.expander('About this app'):
     st.markdown('**What can this app do?**')
